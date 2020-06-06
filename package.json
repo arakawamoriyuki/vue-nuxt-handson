@@ -1,0 +1,13 @@
+{
+  "name": "vue-nuxt-handson",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC"
+}
