@@ -1,5 +1,10 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-responsive
+    class="overflow-y-auto"
+    max-height="400"
+  >
+    <div class="pa-6 text-center">
+      This is an about page
+    </div>
+  </v-responsive>
 </template>
