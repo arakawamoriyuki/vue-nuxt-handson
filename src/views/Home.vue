@@ -45,16 +45,8 @@ export default {
       },
       {
         color: 'green lighten-1',
-        title: '座学',
-        description: 'xxxx',
-        icon: 'mdi-book-open-variant',
-        link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md',
-        linkText: 'github readme',
-      },
-      {
-        color: 'green lighten-1',
         title: 'Web基礎',
-        description: 'xxxx',
+        description: '近代webの基礎的な学習とJavascript超入門しましょう',
         icon: 'mdi-book-open-variant',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md',
         linkText: 'github readme',
@@ -62,7 +54,7 @@ export default {
       {
         color: 'green lighten-1',
         title: 'Vue.jsについて',
-        description: 'xxxx',
+        description: 'Vue.jsについて学びます',
         icon: 'mdi-book-open-variant',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md',
         linkText: 'github readme',
@@ -70,15 +62,15 @@ export default {
       {
         color: 'green lighten-1',
         title: '環境構築',
-        description: 'xxxx',
+        description: '実際に開発環境を立ち上げ、ブラウザに表示します',
         icon: 'mdi-laptop',
-        link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/setup',
-        linkText: 'github setup tag',
+        link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/setup-handson',
+        linkText: 'github setup-handson tag',
       },
       {
         color: 'blue lighten-1',
         title: 'カウンター',
-        description: 'xxxx',
+        description: 'カウンターアプリを作成してみましょう',
         icon: 'mdi-laptop',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/counter',
         linkText: 'github counter tag',
@@ -86,7 +78,7 @@ export default {
       {
         color: 'blue lighten-1',
         title: 'TODOリスト',
-        description: 'xxxx',
+        description: 'TODOリストアプリを作成してみましょう',
         icon: 'mdi-laptop',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/todolist',
         linkText: 'github todolist tag',
@@ -94,7 +86,7 @@ export default {
       {
         color: 'blue lighten-1',
         title: 'プロフィール',
-        description: 'xxxx',
+        description: '自分のプロフィールサイトを作成してみましょう',
         icon: 'mdi-laptop',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/profile',
         linkText: 'github profile tag',
@@ -102,7 +94,7 @@ export default {
       {
         color: 'blue lighten-1',
         title: '静的サイトホスティング',
-        description: 'xxxx',
+        description: 'プロフィールサイトを全世界公開しよう',
         icon: 'mdi-laptop',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md',
         linkText: 'github readme',
@@ -110,7 +102,7 @@ export default {
       {
         color: 'blue lighten-1',
         title: 'nuxt (optional)',
-        description: 'xxxx',
+        description: 'nuxtについて学びます',
         icon: 'mdi-laptop',
         link: 'https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/nuxt',
         linkText: 'github nuxt tag',
