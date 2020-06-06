@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@vue/cli": "^4.4.1",
+    "@vue/cli-service-global": "^4.4.1"
+  },
   "scripts": {},
   "repository": {
     "type": "git"
