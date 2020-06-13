@@ -9,8 +9,8 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">ハンズオン前にnodeやyarn環境を整えましょう</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md" outlined="true" type="button" class="mx-0">
-          github readme
+        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/README.md" outlined="true" type="button" class="mx-0">
+          github
         </v-btn-stub>
       </v-card-text-stub>
     </v-card-stub>
@@ -22,8 +22,8 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">近代webの基礎的な学習とJavascript超入門しましょう</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md" outlined="true" type="button" class="mx-0">
-          github readme
+        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/doc/web.md" outlined="true" type="button" class="mx-0">
+          github doc web
         </v-btn-stub>
       </v-card-text-stub>
     </v-card-stub>
@@ -35,8 +35,8 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">Vue.jsについて学びます</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md" outlined="true" type="button" class="mx-0">
-          github readme
+        <v-btn-stub color="green lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/doc/vue.md" outlined="true" type="button" class="mx-0">
+          github doc vue
         </v-btn-stub>
       </v-card-text-stub>
     </v-card-stub>
@@ -100,8 +100,8 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">プロフィールサイトを全世界公開しよう</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="blue lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/readme.md" outlined="true" type="button" class="mx-0">
-          github readme
+        <v-btn-stub color="blue lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/doc/hosting.md" outlined="true" type="button" class="mx-0">
+          github doc hosting
         </v-btn-stub>
       </v-card-text-stub>
     </v-card-stub>
@@ -113,8 +113,8 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">nuxtについて学びます</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="blue lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/nuxt" outlined="true" type="button" class="mx-0">
-          github nuxt tag
+        <v-btn-stub color="blue lighten-1" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/doc/nuxt.md" outlined="true" type="button" class="mx-0">
+          github doc nuxt
         </v-btn-stub>
       </v-card-text-stub>
     </v-card-stub>
