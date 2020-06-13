@@ -1,5 +1,5 @@
 <template>
-  <v-timeline align-top :dense="$vuetify.breakpoint.smAndDown">
+  <v-timeline align-top>
     <v-timeline-item
       v-for="(timeline, i) in timelines"
       :key="i"
