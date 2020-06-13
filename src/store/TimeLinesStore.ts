@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    timelines: [
+    timeLines: [
       {
         color: 'green lighten-1',
         title: '事前準備',

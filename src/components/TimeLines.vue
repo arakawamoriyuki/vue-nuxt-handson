@@ -1,29 +1,29 @@
 <template>
   <v-timeline align-top>
     <v-timeline-item
-      v-for="(timeline, i) in timelines"
+      v-for="(timeLine, i) in timeLines"
       :key="i"
-      :color="timeline.color"
-      :icon="timeline.icon"
+      :color="timeLine.color"
+      :icon="timeLine.icon"
       fill-dot
     >
       <v-card
-        :color="timeline.color"
+        :color="timeLine.color"
         dark
       >
-        <v-card-title class="title">{{timeline.title}}</v-card-title>
+        <v-card-title class="title">{{timeLine.title}}</v-card-title>
         <v-card-text class="white text--primary">
           <v-row>
-            <v-col cols="12" md="12">{{timeline.description}}</v-col>
+            <v-col cols="12" md="12">{{timeLine.description}}</v-col>
           </v-row>
           <v-btn
-            v-if="timeline.link"
-            :color="timeline.color"
-            :href="timeline.link"
+            v-if="timeLine.link"
+            :color="timeLine.color"
+            :href="timeLine.link"
             class="mx-0"
             outlined
           >
-            {{timeline.linkText}}
+            {{timeLine.linkText}}
           </v-btn>
         </v-card-text>
       </v-card>
@@ -35,11 +35,11 @@
 import store from '@/store/TimeLinesStore';
 
 export default {
-  name: 'timelines',
+  name: 'time-lines',
   components: {},
   computed: {
-    timelines() {
-      return store.state.timelines;
+    timeLines() {
+      return store.state.timeLines;
     },
   },
 };
