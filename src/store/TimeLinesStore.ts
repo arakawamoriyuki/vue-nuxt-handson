@@ -39,7 +39,7 @@ export default new Vuex.Store({
         linkText: 'github setup-handson tag',
       },
       {
-        color: 'blue lighten-1',
+        color: 'green lighten-1',
         title: 'カウンター',
         description: 'カウンターアプリを作成してみましょう',
         icon: 'mdi-laptop',
