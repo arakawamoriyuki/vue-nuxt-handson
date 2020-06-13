@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
-      <v-btn href="/" text>
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <AppBar/>
     <v-content>
       <router-view/>
     </v-content>
@@ -13,10 +9,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import AppBar from '@/components/AppBar.vue';
 
 export default Vue.extend({
   name: 'App',
-  components: {},
+  components: { AppBar },
   data: () => ({}),
 });
 </script>
