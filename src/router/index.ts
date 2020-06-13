@@ -10,6 +10,11 @@ const routes: Array<RouteConfig> = [
     name: 'Home',
     component: Home,
   },
+  {
+    path: '/counter',
+    name: 'Counter',
+    component: () => import(/* webpackChunkName: "counter" */ '../views/Counter.vue'),
+  },
 ];
 
 const router = new VueRouter({
