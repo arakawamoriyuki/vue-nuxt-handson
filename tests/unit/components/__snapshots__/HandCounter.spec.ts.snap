@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HandCounter HandCounterが表示される 1`] = `
+<v-card-stub loaderheight="4" tag="div" maxwidth="200" outlined="true" class="mx-auto">
+  <v-list-item-stub activeclass="" tag="div" threeline="true">
+    <v-list-item-content-stub>
+      <div class="text-center text-h1">0</div>
+    </v-list-item-content-stub>
+  </v-list-item-stub>
+  <v-card-actions-stub>
+    <v-btn-stub tag="button" activeclass="" icon="true" type="button">
+      <v-icon-stub xlarge="" x-large="">mdi-minus</v-icon-stub>
+    </v-btn-stub>
+    <v-spacer-stub></v-spacer-stub>
+    <v-btn-stub tag="button" activeclass="" icon="true" type="button">
+      <v-icon-stub xlarge="" x-large="">mdi-plus</v-icon-stub>
+    </v-btn-stub>
+  </v-card-actions-stub>
+</v-card-stub>
+`;
