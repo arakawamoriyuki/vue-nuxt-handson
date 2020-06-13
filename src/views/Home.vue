@@ -1,7 +1,7 @@
 <template>
-  <v-container>
+  <v-main>
     <timelines/>
-  </v-container>
+  </v-main>
 </template>
 
 <script>
