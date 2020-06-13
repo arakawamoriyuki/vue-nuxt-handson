@@ -26,18 +26,19 @@ import store from '@/store/HandCounterStore';
 
 export default {
   name: 'hand-counter',
+  store,
   components: {},
   computed: {
     count() {
-      return store.state.count;
+      return this.$store.state.count;
     },
   },
   methods: {
     increment() {
-      store.commit('increment');
+      this.$store.commit('increment');
     },
     decrement() {
-      store.commit('decrement');
+      this.$store.commit('decrement');
     },
   },
 };
