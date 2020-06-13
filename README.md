@@ -1,41 +1,61 @@
 # Vue Nuxt Handson
 
-## Project setup
+## 環境構築
+
+### 事前準備
+
+[nodenv](https://github.com/nodenv/nodenv)や[nodebrew](https://github.com/hokaccha/nodebrew)、[インストーラー](https://nodejs.org/ja/download/)などを利用して `node v14.3.0` 環境を用意してください。
+
+また、 `yarn v1.22.4` をインストールしてください。
 
 ```
-$ yarn install
+$ node --version
+v14.3.0
+$ npm install -g yarn@1.22.4
+$ yarn --version
+1.22.4
 ```
 
-### Compiles and hot-reloads for development
+### パッケージインストール
+
+```
+$ yarn
+```
+
+### dev server立ち上げ
 
 ```
 $ yarn serve
 ```
 
-### Compiles and minifies for production
+
+## 環境構築(docker)
+
+```
+$ docker build -t vue-nuxt-handson .
+$ docker run --rm -p 8080:8080 -v "$(pwd):/usr/src/app" vue-nuxt-handson
+```
+
+## build
 
 ```
 $ yarn build
 ```
 
-### Run your unit tests
+## unit test
 
 ```
 $ yarn test:unit
 ```
 
-### Run your end-to-end tests
+## e2e test
 
 ```
 $ yarn test:e2e
 ```
 
-### Lints and fixes files
+## lint
 
 ```
 $ yarn lint
 ```
-
-### Customidze configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
