@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList TodoListが表示される 1`] = `
+<div>
+  <v-card-stub loaderheight="4" tag="div" maxwidth="800" outlined="true" class="mx-auto">
+    <todo-form-stub onsubmit="function (newTask) { _vm.addTask(newTask) }"></todo-form-stub>
+  </v-card-stub>
+  <v-card-stub loaderheight="4" tag="div" maxwidth="800" outlined="true" class="mx-auto">
+    <check-list-stub title="Todo" items="[object Object],[object Object],[object Object]" oncheck="function (task) { _vm.done(task.id) }" ondelete="function (task) { _vm.removeTask(task.id) }"></check-list-stub>
+    <v-divider-stub></v-divider-stub>
+    <check-list-stub title="Done" items="[object Object],[object Object]" oncheck="function (task) { _vm.retodo(task.id) }" ondelete="function (task) { _vm.removeTask(task.id) }"></check-list-stub>
+  </v-card-stub>
+</div>
+`;

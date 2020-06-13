@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckList CheckListが表示される 1`] = `
+<v-list-stub tag="div" flat="true" subheader="true" twoline="true">
+  <v-subheader-stub></v-subheader-stub>
+  <v-list-item-group-stub activeclass="v-item--active" multiple="true"></v-list-item-group-stub>
+</v-list-stub>
+`;

@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoForm TodoFormが表示される 1`] = `
+<div>
+  <v-toolbar-stub color="primary" dark="true" tag="header" extensionheight="48" flat="true" src="">
+    <v-toolbar-title-stub>Create Todo</v-toolbar-title-stub>
+  </v-toolbar-stub>
+  <v-card-text-stub>
+    <v-form-stub>
+      <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" backgroundcolor="" label="title" loaderheight="2" clearicon="$clear" type="text"></v-text-field-stub>
+      <v-text-field-stub errorcount="1" errormessages="" messages="" rules="" successmessages="" value="" backgroundcolor="" label="description" loaderheight="2" clearicon="$clear" type="text"></v-text-field-stub>
+    </v-form-stub>
+  </v-card-text-stub>
+  <v-card-actions-stub>
+    <v-spacer-stub></v-spacer-stub>
+    <v-btn-stub color="primary" tag="button" activeclass="" type="button">Create</v-btn-stub>
+  </v-card-actions-stub>
+</div>
+`;
