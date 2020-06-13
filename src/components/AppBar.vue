@@ -6,6 +6,9 @@
     <v-btn href="/counter" text>
       <v-icon>mdi-counter</v-icon>
     </v-btn>
+    <v-btn href="/todo-list" text>
+      <v-icon>mdi-clipboard-check-multiple-outline</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 

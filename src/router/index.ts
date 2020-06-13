@@ -15,6 +15,11 @@ const routes: Array<RouteConfig> = [
     name: 'Counter',
     component: () => import(/* webpackChunkName: "counter" */ '../views/Counter.vue'),
   },
+  {
+    path: '/todo-list',
+    name: 'TodoList',
+    component: () => import(/* webpackChunkName: "counter" */ '../views/TodoList.vue'),
+  },
 ];
 
 const router = new VueRouter({
