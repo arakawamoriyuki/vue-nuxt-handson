@@ -3,6 +3,9 @@
     <v-btn href="/" text>
       <v-icon>mdi-home</v-icon>
     </v-btn>
+    <v-btn href="/counter" text>
+      <v-icon>mdi-counter</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 
@@ -10,6 +13,6 @@
 import Vue from 'vue';
 
 export default Vue.extend({
-  name: 'AppBar',
+  name: 'app-bar',
 });
 </script>

@@ -35,7 +35,7 @@
 import store from '@/store/TimeLinesStore';
 
 export default {
-  name: 'TimeLines',
+  name: 'timelines',
   components: {},
   computed: {
     timelines() {
