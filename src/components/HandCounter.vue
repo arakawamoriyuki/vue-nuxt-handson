@@ -1,14 +1,24 @@
 <template>
-  <v-responsive
-    class="overflow-y-auto"
-    max-height="400"
+  <v-card
+    class="mx-auto"
+    max-width="200"
+    outlined
   >
-    <p>{{ count }}</p>
-    <p>
-      <button @click="increment">+</button>
-      <button @click="decrement">-</button>
-    </p>
-  </v-responsive>
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="text-center text-h1">{{ count }}</div>
+      </v-list-item-content>
+    </v-list-item>
+    <v-card-actions>
+      <v-btn icon @click="decrement">
+        <v-icon x-large>mdi-minus</v-icon>
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn icon @click="increment">
+        <v-icon x-large>mdi-plus</v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
 </template>
 
 <script>
