@@ -47,7 +47,7 @@ export default new Vuex.Store({
         linkText: 'github counter tag',
       },
       {
-        color: 'blue lighten-1',
+        color: 'green lighten-1',
         title: 'TODOリスト',
         description: 'TODOリストアプリを作成してみましょう',
         icon: 'mdi-laptop',

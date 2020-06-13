@@ -67,14 +67,14 @@ exports[`TimeLines TimeLinesが表示される 1`] = `
       </v-card-text-stub>
     </v-card-stub>
   </v-timeline-item-stub>
-  <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-laptop">
+    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
       <v-card-title-stub class="title">TODOリスト</v-card-title-stub>
       <v-card-text-stub class="white text--primary">
         <v-row-stub tag="div">
           <v-col-stub cols="12" md="12" tag="div">TODOリストアプリを作成してみましょう</v-col-stub>
         </v-row-stub>
-        <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/todolist" type="button" class="mx-0">
+        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/todolist" type="button" class="mx-0">
           github todolist tag
         </v-btn-stub>
       </v-card-text-stub>
