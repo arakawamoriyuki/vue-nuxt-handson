@@ -16,9 +16,9 @@ const routes: Array<RouteConfig> = [
     component: () => import(/* webpackChunkName: "counter" */ '../views/Counter.vue'),
   },
   {
-    path: '/todo-list',
-    name: 'TodoList',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/TodoList.vue'),
+    path: '/todo',
+    name: 'Todo',
+    component: () => import(/* webpackChunkName: "counter" */ '../views/Todo.vue'),
   },
 ];
 
