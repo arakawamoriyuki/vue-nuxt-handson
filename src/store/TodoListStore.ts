@@ -5,10 +5,6 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    newTask: {
-      title: '',
-      description: '',
-    },
     tasks: [
       {
         id: 1,
