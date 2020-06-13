@@ -36,10 +36,11 @@ import store from '@/store/TimeLinesStore';
 
 export default {
   name: 'time-lines',
+  store,
   components: {},
   computed: {
     timeLines() {
-      return store.state.timeLines;
+      return this.$store.state.timeLines;
     },
   },
 };
