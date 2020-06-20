@@ -69,4 +69,18 @@ export default new Vuex.Store({
       state.tasks[index].done = false;
     },
   },
+  actions: {
+    addTask: (context, newTask) => {
+      context.commit('addTask', newTask);
+    },
+    removeTask: (context, taskId) => {
+      context.commit('removeTask', taskId);
+    },
+    done: (context, taskId) => {
+      context.commit('done', taskId);
+    },
+    retodo: (context, taskId) => {
+      context.commit('retodo', taskId);
+    },
+  },
 });
