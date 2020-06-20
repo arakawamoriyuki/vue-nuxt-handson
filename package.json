@@ -11,6 +11,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy:now": "yarn build && cp ./now.json ./dist/now.json && yarn now --prod",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:updateSnapshot": "vue-cli-service test:unit --updateSnapshot",
     "test:e2e": "vue-cli-service test:e2e",
@@ -48,6 +49,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "now": "^19.1.1",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
     "stylus": "^0.54.7",
