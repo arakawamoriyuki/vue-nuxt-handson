@@ -1,123 +1,125 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TimeLines TimeLinesが表示される 1`] = `
-<v-timeline-stub aligntop="true">
-  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-home">
-    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
-      <v-card-title-stub class="title">事前準備</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">ハンズオン前にnodeやyarn環境を整えましょう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/README.md" type="button" class="mx-0">
-          github
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-book-open-variant">
-    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
-      <v-card-title-stub class="title">Web基礎</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">近代webの基礎的な学習とJavascript超入門しましょう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/web.md" type="button" class="mx-0">
-          github docs web
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-book-open-variant">
-    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
-      <v-card-title-stub class="title">Vue.jsについて</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">Vue.jsについて学びます</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/vue.md" type="button" class="mx-0">
-          github docs vue
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
-      <v-card-title-stub class="title">環境構築</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">実際に開発環境を立ち上げ、ブラウザに表示します</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/setup-handson" type="button" class="mx-0">
-          github setup-handson tag
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
-      <v-card-title-stub class="title">カウンター</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">カウンターアプリを作成してみましょう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/counter" type="button" class="mx-0">
-          github counter tag
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
-      <v-card-title-stub class="title">TODOリスト</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">TODOリストアプリを作成してみましょう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/todolist" type="button" class="mx-0">
-          github todolist tag
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
-      <v-card-title-stub class="title">プロフィール</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">自分のプロフィールサイトを作成してみましょう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/profile" type="button" class="mx-0">
-          github profile tag
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
-      <v-card-title-stub class="title">静的サイトホスティング</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">プロフィールサイトを全世界公開しよう</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/hosting.md" type="button" class="mx-0">
-          github docs hosting
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-  <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
-    <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
-      <v-card-title-stub class="title">nuxt (optional)</v-card-title-stub>
-      <v-card-text-stub class="white text--primary">
-        <v-row-stub tag="div">
-          <v-col-stub cols="12" md="12" tag="div">nuxtについて学びます</v-col-stub>
-        </v-row-stub>
-        <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/nuxt.md" type="button" class="mx-0">
-          github docs nuxt
-        </v-btn-stub>
-      </v-card-text-stub>
-    </v-card-stub>
-  </v-timeline-item-stub>
-</v-timeline-stub>
+<v-container-stub tag="div">
+  <v-timeline-stub aligntop="true">
+    <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-home">
+      <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
+        <v-card-title-stub class="title">事前準備</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">ハンズオン前にnodeやyarn環境を整えましょう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/README.md" type="button" class="mx-0">
+            github
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-book-open-variant">
+      <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
+        <v-card-title-stub class="title">Web基礎</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">近代webの基礎的な学習とJavascript超入門しましょう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/web.md" type="button" class="mx-0">
+            github docs web
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-book-open-variant">
+      <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
+        <v-card-title-stub class="title">Vue.jsについて</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">Vue.jsについて学びます</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/vue.md" type="button" class="mx-0">
+            github docs vue
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="green lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="green lighten-1" dark="true">
+        <v-card-title-stub class="title">環境構築</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">実際に開発環境を立ち上げ、ブラウザに表示します</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="green lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/setup-handson" type="button" class="mx-0">
+            github setup-handson tag
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+        <v-card-title-stub class="title">カウンター</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">カウンターアプリを作成してみましょう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/counter" type="button" class="mx-0">
+            github counter tag
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+        <v-card-title-stub class="title">TODOリスト</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">TODOリストアプリを作成してみましょう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/todolist" type="button" class="mx-0">
+            github todolist tag
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+        <v-card-title-stub class="title">プロフィール</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">自分のプロフィールサイトを作成してみましょう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/tree/profile" type="button" class="mx-0">
+            github profile tag
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+        <v-card-title-stub class="title">静的サイトホスティング</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">プロフィールサイトを全世界公開しよう</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/hosting.md" type="button" class="mx-0">
+            github docs hosting
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+    <v-timeline-item-stub color="blue lighten-1" filldot="true" icon="mdi-laptop">
+      <v-card-stub loaderheight="4" tag="div" color="blue lighten-1" dark="true">
+        <v-card-title-stub class="title">nuxt (optional)</v-card-title-stub>
+        <v-card-text-stub class="white text--primary">
+          <v-row-stub tag="div">
+            <v-col-stub cols="12" md="12" tag="div">nuxtについて学びます</v-col-stub>
+          </v-row-stub>
+          <v-btn-stub color="blue lighten-1" outlined="true" tag="button" activeclass="" href="https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/master/docs/nuxt.md" type="button" class="mx-0">
+            github docs nuxt
+          </v-btn-stub>
+        </v-card-text-stub>
+      </v-card-stub>
+    </v-timeline-item-stub>
+  </v-timeline-stub>
+</v-container-stub>
 `;

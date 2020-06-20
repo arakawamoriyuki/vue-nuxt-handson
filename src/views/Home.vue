@@ -1,16 +1,14 @@
 <template>
-  <v-main>
-    <time-lines/>
-  </v-main>
+  <timelines/>
 </template>
 
 <script>
-import TimeLines from '@/components/TimeLines.vue';
+import timelines from '@/components/TimeLines.vue';
 
 export default {
   name: 'home',
   components: {
-    TimeLines,
+    timelines,
   },
 };
 </script>

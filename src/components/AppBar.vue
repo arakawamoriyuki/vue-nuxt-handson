@@ -1,11 +1,15 @@
 <template>
   <v-app-bar app color="primary" dark>
-    <v-btn href="/" text>
-      <v-icon>mdi-home</v-icon>
-    </v-btn>
-    <v-btn href="/counter" text>
-      <v-icon>mdi-counter</v-icon>
-    </v-btn>
+    <router-link to="/">
+      <v-btn text>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+    </router-link>
+    <router-link to="/counter">
+      <v-btn text>
+        <v-icon>mdi-counter</v-icon>
+      </v-btn>
+    </router-link>
   </v-app-bar>
 </template>
 
