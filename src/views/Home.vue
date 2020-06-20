@@ -1,7 +1,5 @@
 <template>
-  <v-main>
-    <time-lines/>
-  </v-main>
+  <time-lines/>
 </template>
 
 <script>
