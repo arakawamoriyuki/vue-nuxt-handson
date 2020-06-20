@@ -43,16 +43,16 @@ export default {
   },
   methods: {
     addTask(task) {
-      this.$store.commit('addTask', task);
+      this.$store.dispatch('addTask', task);
     },
     removeTask(taskId) {
-      this.$store.commit('removeTask', taskId);
+      this.$store.dispatch('removeTask', taskId);
     },
     done(taskId) {
-      this.$store.commit('done', taskId);
+      this.$store.dispatch('done', taskId);
     },
     retodo(taskId) {
-      this.$store.commit('retodo', taskId);
+      this.$store.dispatch('retodo', taskId);
     },
   },
 };
