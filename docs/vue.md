@@ -15,9 +15,9 @@ list: #ffffff, bullet-character(・)
 
 - Javascriptのフレームワーク
 - コンポーネント志向
-- AngularのテンプレートシンタックスでReactのような機能範囲
+- Angularのようなtemplate syntaxでReactのような機能範囲
 - 日本語ドキュメント含めて充実
-- 学習コスト少なめ
+- 比較的学習コスト控えめ
 
 ---
 
@@ -28,7 +28,7 @@ list: #ffffff, bullet-character(・)
 - React
   - Facebookが開発するView側の機能を提供する世界で一番人気な中規模向けフレームワーク
 - Angular
-  - Googleが開発するテンプレートからajaxなどフルスタックにサポートする大規模向けフレームワーク
+  - Googleが開発するテンプレートやルーター、HttpClientなど幅広くサポートする大規模向けフレームワーク
 
 https://trends.google.co.jp/trends/explore?q=vue,angular,react
 
@@ -97,8 +97,8 @@ $ vue create {project name}
 # 主なツールセット
 
 - Babel トランスパイルに必要
-- TypeScript
-- Router SPA化するためのルーティングライブラリ
+- TypeScript AltJS
+- VueRouter SPA化するためのルーティングライブラリ
 - Vuex 状態管理
 - ESLint+AirbnbConfig 静的解析
 - Stylus AltCSS
@@ -110,11 +110,10 @@ $ vue create {project name}
 
 # フォルダ構成と重要なファイルをみてみよう
 
-- src/assets 画像などのファイル置き場 componentsなどからimportして使う
-- src/components コンポーネント置き場 分解したUIパーツをここに置く
 - src/router/index.ts SPAにするためのルーティング定義
-- src/store 状態やイベントを受け取ってviewを変更するためのロジックを置く
 - src/views ルーティング毎の1番上位のコンポーネントをここに置く
+- src/components コンポーネント置き場 分解したUIパーツをここに置く
+- src/store 状態やイベントを受け取ってviewを変更するためのロジックを置く
 
 ---
 
@@ -248,9 +247,9 @@ styleタグを書く事でcssを書く事ができます。
 
 # styleタグ
 
-今回はstylusというSASSやLESSのほぼ上位互換なAltCSSを利用しているので、効率的にCSSを書く事ができます。
+今回はstylusというAltCSSを利用しているので、効率的にCSSを書く事ができます。
 
-普通のCSSやSASS構文でも動作しますが、必要なら利用しましょう。
+変数などの構文以外はCSSやSASSの構文でも動作しますが、必要なら利用しましょう。
 
 https://stylus-lang.com/
 
@@ -308,15 +307,15 @@ template内で利用できるようになります。
 
 ```html
 <template>
-  <title/>
+  <my-header/>
 </template>
 
 <script>
-import Title from '@/components/Title.vue';
+import MyHeader from '@/components/MyHeader.vue';
 
 export default {
   components: {
-    Title,
+    MyHeader,
   },
 };
 </script>
@@ -337,7 +336,7 @@ propsで受け取る属性を定義します。
 
 <script>
 export default {
-  name: 'title',
+  name: 'my-header',
   props: {
     title: String,
   },
@@ -347,7 +346,7 @@ export default {
 
 ```html
 <template>
-  <title title="hello"/>
+  <my-header title="hello"/>
 </template>
 ```
 
@@ -370,6 +369,10 @@ export default {
 
 ---
 
+Store(状態管理)が何か図でみてみましょう
+
+---
+
 ![fit](https://vuex.vuejs.org/flow.png)
 
 ---
@@ -384,13 +387,17 @@ https://vuex.vuejs.org/ja/
 
 ---
 
+Vuexの状態管理の図もみてみましょう
+
+---
+
 ![fit](https://vuex.vuejs.org/vuex.png)
 
 ---
 
 今回はデフォルトの状態管理ではなくVuexの状態管理を学びます。
 
-非常に難しい概念ですが、後々入れておくべきだったと思う前に慣れておきましょう。
+難しい概念ですが、後々入れておくべきだったと後悔する前に慣れておきましょう。
 
 今はこういう書き方なのか程度の理解で問題ありません。
 
@@ -494,7 +501,7 @@ export default new Vuex.Store({
 
 # state
 
-`state` で状態を定義します。これは画面上に動的に変わる変数を定義すると考えて問題ないです。
+`state` で状態を定義します。これは画面を動的に変える為の変数を定義すると考えて問題ないです。
 
 ```ts
 export default new Vuex.Store({
@@ -544,8 +551,12 @@ export default new Vuex.Store({
 
 公式で非推奨でデバッガにも影響がでるのでなるべく従うようにしよう。
 
-- `actions` は複数個の `commit` を発火する事ができ、非同期処理も可能
-- `mutations` は同期処理。実際に値を更新し、再レンダリングする
+- `actions`
+  - `mutations` へ `commit` する
+  - Backend APIへリクエストを送り、ローディングフラグを操作するなど非同期処理も可能
+- `mutations`
+  - 同期処理のみ。実際に値を更新し、(自動的に)再レンダリングする
+  - dev toolとも連携してデバッグを容易にする
 
 ---
 
@@ -569,7 +580,7 @@ export default new Vuex.Store({
 
 # ユニットテスト
 
-余裕があれば一部書いてるmasterブランチで実行してみよう
+masterブランチで実行してみよう
 
 ```
 $ git checkout master
@@ -588,7 +599,7 @@ https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
 
 # E2Eテスト
 
-余裕があれば一部書いてるmasterブランチで実行してみよう
+masterブランチで実行してみよう
 
 ```
 $ git checkout master
@@ -602,6 +613,19 @@ $ yarn test:e2e
 ---
 
 ![fit](./vue_e2e_2.png)
+
+---
+
+---
+
+# 静的コード解析
+
+masterブランチで実行してみよう
+
+```
+$ git checkout master
+$ yarn lint
+```
 
 ---
 

@@ -22,8 +22,6 @@ list: #ffffff, bullet-character(・)
   - 共通して HTML, CSS, Javascript
   - クライアントサイド、ブラウザで動く言語
 
-![](https://www.netclipart.com/pp/m/227-2277231_world-wide-web-icon-png.png)
-
 ---
 
 # ハンズオンで主に学ぶもの
@@ -31,8 +29,6 @@ list: #ffffff, bullet-character(・)
 - フロントエンド クライアントサイド ブラウザ側
 - 主にJavascript (TypeScriptを利用)
 - フレームワークとして Vue.js
-
-![](https://web.hakohako.info/infosystem/wp-content/uploads/2014/04/htmlcssjs-sum.png)
 
 ---
 
@@ -57,7 +53,7 @@ list: #ffffff, bullet-character(・)
 
 ---
 
-# デバイズや技術の進化
+# デバイスや技術の進化
 
 さらに豪華なUIでUX向上した
 
@@ -68,7 +64,7 @@ list: #ffffff, bullet-character(・)
 
 ---
 
-# デバイズや技術の進化
+# デバイスや技術の進化
 
 - シングルページアプリケーション
   - 再読み込みがなくページ遷移のないアプリのようなWebページ
@@ -80,7 +76,7 @@ list: #ffffff, bullet-character(・)
 
 ---
 
-# クロスプラットフォーム化
+# クロスプラットフォーム
 
 - Flutter, React Native, Xamarin
 - Unity
@@ -203,7 +199,7 @@ console.log(result);
 3. Consoleタブで以下jsを貼り付け
 
 ```ts
-const sum = (a: int, b: int) => a + b;
+const sum = (a, b) => a + b;
 const result = sum(1, 2);
 console.log(result);
 ```
