@@ -55,7 +55,7 @@ list: #ffffff, bullet-character(・)
 
 # デバイスや技術の進化
 
-さらに豪華なUIでUX向上した
+さらに豪華なUIに
 
 - WebGL
   - https://webglsamples.org/aquarium/aquarium.html
@@ -67,7 +67,7 @@ list: #ffffff, bullet-character(・)
 # デバイスや技術の進化
 
 - シングルページアプリケーション
-  - 再読み込みがなくページ遷移のないアプリのようなWebページ
+  - 再読み込みがなくページ遷移のない、アプリのようなWebページ
 - データバインディング(リアクティブプログラミング)
   - angularjsの台頭でさらに簡単、かつルールのあるレンダリングが可能になった
     - https://www.w3schools.com/angular/tryit.asp?filename=try_ng_intro
@@ -87,7 +87,7 @@ list: #ffffff, bullet-character(・)
 - Web技術をアプリに生かしたり
 - 各プラットフォーム向けにビルド可能だったり
 - Webサイト自体をアプリ化したり
-- アプリをWebにビルドした例 https://worldflipper.jp/demo/
+- https://worldflipper.jp/demo/
 
 ---
 
@@ -99,7 +99,7 @@ list: #ffffff, bullet-character(・)
   - ホーム画面上でのアイコンの表示
   - カメラやマイク、センサー類、BluetoothやNFCなどハードウェアアクセス
 - web assembly
-  - ブラウザ上でバイナリを動作させる (Goなどでコンパイル)
+  - ブラウザ上でバイナリを動作させる (Goなど、コンパイルして利用)
 - web gpu support
 
 ---
