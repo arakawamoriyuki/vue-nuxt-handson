@@ -606,7 +606,7 @@ export default new Vuex.Store({
 
 masterブランチで実行してみよう
 
-```
+```sh
 $ git checkout master
 $ yarn test:unit
 ```
@@ -625,7 +625,7 @@ https://docs.cypress.io/guides/overview/why-cypress.html#In-a-nutshell
 
 masterブランチで実行してみよう
 
-```
+```sh
 $ git checkout master
 $ yarn test:e2e
 ```
@@ -655,7 +655,7 @@ $ yarn test:e2e
 
 masterブランチで実行してみよう
 
-```
+```sh
 $ git checkout master
 $ yarn lint
 ```
@@ -670,7 +670,7 @@ $ yarn lint
 
 `setup-handson` タグをチェックアウトして実際の書き方調べながらカウンターアプリを作ろう。
 
-```
+```sh
 $ git checkout refs/tags/setup-handson
 ```
 
@@ -692,7 +692,7 @@ $ git checkout refs/tags/setup-handson
 
 `counter` タグをチェックアウトして実際の書き方調べながらTODOリストアプリを作ろう。
 
-```
+```sh
 $ git checkout refs/tags/counter
 ```
 
@@ -712,7 +712,7 @@ $ git checkout refs/tags/counter
 
 `todolist` タグをチェックアウトして実際の書き方調べながらプロフィールサイトを作ろう。
 
-```
+```sh
 $ git checkout refs/tags/todolist
 ```
 
