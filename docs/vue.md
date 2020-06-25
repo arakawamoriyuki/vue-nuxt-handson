@@ -568,9 +568,7 @@ export default new Vuex.Store({
 
 ユニットテストにjestを利用しています。
 
-使いやすい関数群に加え、変更を加えた事による影響を調べるリグレッションテストに有効なスナップショットテストなど
-
-かなり便利なので調べてみましょう。
+使いやすい関数群に加え、変更を加えた事による影響を調べるリグレッションテストに有効なスナップショットテストなどかなり便利です。
 
 - vue unit test https://jp.vuejs.org/v2/guide/unit-testing.html
 - jest https://jestjs.io/docs/ja/getting-started
@@ -615,6 +613,15 @@ $ yarn test:e2e
 ![fit](./vue_e2e_2.png)
 
 ---
+
+# 静的コード解析
+
+静的コード解析に `eslint` を利用し、設定は `airbnb` を利用しています。
+
+チーム開発時に個人の書き方の差を埋めてくれたり、良くない書き方をしている場合に注意してくれるのでかなり勉強になります。
+
+- eslint https://eslint.org/
+- eslint + airbnb config https://github.com/vuejs/eslint-config-airbnb
 
 ---
 
