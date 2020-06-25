@@ -121,6 +121,14 @@ $ vue create {project name}
 
 ---
 
+# コンポーネントの書き方
+
+`<template>` や `<style>` や `<script>` などのタグを書いてコンポーネントの見た目や動作を定義します。
+
+ひとつずつみていきましょう。
+
+---
+
 # templateタグ
 
 templateタグを書く事でhtmlを書く事ができます。
@@ -474,6 +482,16 @@ export default {
 
 ---
 
+# storeの書き方
+
+Vueデフォルトの状態管理 `data` `methods` `computed` に変わる
+
+Vuexの状態管理 `state` `mutations` `actions` `getters` を定義します。
+
+それぞれみていきましょう。
+
+---
+
 ```ts
 import Vue from 'vue';
 import Vuex from 'vuex';
@@ -564,6 +582,14 @@ export default new Vuex.Store({
 
 ---
 
+# テスト
+
+巨大なプロジェクトになるほど品質は重要になります。
+
+品質を維持するための `ユニットテスト` `E2Eテスト` `静的コード解析` についてもみていきましょう。
+
+---
+
 # ユニットテスト
 
 ユニットテストにjestを利用しています。
@@ -638,6 +664,10 @@ $ yarn lint
 
 # カウンターアプリを作ってみよう
 
+---
+
+# カウンターアプリを作ってみよう
+
 `setup-handson` タグをチェックアウトして実際の書き方調べながらカウンターアプリを作ろう。
 
 ```
@@ -656,6 +686,10 @@ $ git checkout refs/tags/setup-handson
 
 # TODOリストアプリを作ってみよう
 
+---
+
+# TODOリストアプリを作ってみよう
+
 `counter` タグをチェックアウトして実際の書き方調べながらTODOリストアプリを作ろう。
 
 ```
@@ -667,6 +701,10 @@ $ git checkout refs/tags/counter
 # TODOリストアプリ参考
 
 - https://arakawamoriyuki-vue-nuxt-handson.vercel.app
+
+---
+
+# プロフィールサイトを作ってみよう
 
 ---
 
