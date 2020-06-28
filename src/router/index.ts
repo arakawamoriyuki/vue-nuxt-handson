@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
+import Counter from '../views/Counter.vue';
 
 Vue.use(VueRouter);
 
@@ -13,7 +14,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/counter',
     name: 'Counter',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/Counter.vue'),
+    component: Counter,
   },
 ];
 
