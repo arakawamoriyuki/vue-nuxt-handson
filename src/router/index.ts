@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import Home from '../views/Home.vue';
 import Counter from '../views/Counter.vue';
+import Todo from '../views/Todo.vue';
 
 Vue.use(VueRouter);
 
@@ -19,7 +20,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/todo',
     name: 'Todo',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/Todo.vue'),
+    component: Todo,
   },
 ];
 
