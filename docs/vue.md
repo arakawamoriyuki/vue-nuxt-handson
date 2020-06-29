@@ -18,6 +18,8 @@ list: #ffffff, bullet-character(・)
 - Angularのようなtemplate syntaxでReactのような機能範囲
 - 日本語ドキュメント含めて充実
 - 比較的学習コスト控えめ
+- 国内ではzozo、line、dmm。国外ではalibaba、baidu等
+- 東京都コロナ対策サイト https://github.com/tokyo-metropolitan-gov/covid19
 
 ---
 
