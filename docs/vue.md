@@ -664,17 +664,111 @@ $ yarn lint
 
 ---
 
-# カウンターアプリを作ってみよう
+# ハローワールドしてみよう
 
 ---
 
-# カウンターアプリを作ってみよう
+# ハローワールドしてみよう
 
-`setup-handson` タグをチェックアウトして実際の書き方調べながらカウンターアプリを作ろう。
+`setup-handson` タグをチェックアウトして実際の書き方調べながらハローワールドしよう。
 
 ```sh
 $ git checkout refs/tags/setup-handson
 ```
+
+`/helloworld` にアクセスすると `hello world!` という文字が表示されるページを作ってみましょう。
+
+---
+
+# まずはviewを作成します
+
+`src/views/HelloWorld.vue`
+
+```html
+<template>
+  <p>helloworld</p>
+</template>
+
+<script>
+export default {
+  name: 'helloworld',
+};
+</script>
+
+```
+
+---
+
+# 作ったviewをrouterに登録します
+
+`src/router/index.ts`
+
+```diff
+...
+import Home from '../views/Home.vue';
++ import HelloWorld from '../views/HelloWorld.vue';
+...
+const routes: Array<RouteConfig> = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home,
+  },
++ {
++   path: '/helloworld',
++   name: 'HelloWorld',
++   component: HelloWorld,
++ },
+];
+...
+```
+
+---
+
+# /helloworld にアクセスする。
+
+この時点で作ったviewがrouterに登録され、 `/helloworld` のパスで `hello world!` が表示された事が確認できると思います。
+
+ヘッダメニューには登録されていないので `AppBar.vue` を修正してメニューに表示しましょう。
+
+---
+
+# AppBar.vue(ヘッダメニュー)に登録します
+
+`src/components/AppBar.vue`
+
+```diff
+<template>
+  <v-app-bar app color="primary" dark>
+    <router-link to="/">
+      <v-btn text>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+    </router-link>
++   <router-link to="/helloworld">
++     <v-btn text>
++       <v-icon>mdi-numeric-1-box-outline</v-icon>
++     </v-btn>
++   </router-link>
+  </v-app-bar>
+</template>
+```
+
+---
+
+# いろいろいじったり調べたりしよう
+
+- `hello world!` の文言変更してみよう
+- routerいじってURLを変更してみよう
+- v-btnってなんだろう
+  - https://vuetifyjs.com/ja/components/buttons/
+- v-iconってなんだろう。icon変更してみよう
+  - https://materialdesignicons.com/ 登録されているicon名に `mdi-` をつけて `v-icon` タグで囲う
+- AppBarはなぜ全ページで表示されるんだろう
+
+---
+
+# カウンターアプリを作ってみよう
 
 ---
 
