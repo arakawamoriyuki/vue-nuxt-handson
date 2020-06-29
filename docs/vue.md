@@ -1065,6 +1065,7 @@ $ git checkout refs/tags/counter
 # TODOリストアプリ参考
 
 - https://arakawamoriyuki-vue-nuxt-handson.vercel.app
+- 各自思いついた機能を付け加えてみよう
 
 ---
 
