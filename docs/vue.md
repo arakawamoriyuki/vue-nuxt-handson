@@ -775,8 +775,10 @@ const routes: Array<RouteConfig> = [
 # カウンターアプリ参考
 
 - https://arakawamoriyuki-vue-nuxt-handson.vercel.app
-- https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/components/HandCounter.vue
-- https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/store/HandCounterStore.ts
+- router https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/router/index.ts#L14-L18
+- view https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/views/Counter.vue
+- component https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/components/HandCounter.vue
+- store https://github.com/arakawamoriyuki/vue-nuxt-handson/blob/counter/src/store/HandCounterStore.ts
 
 ---
 
