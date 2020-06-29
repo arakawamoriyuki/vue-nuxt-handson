@@ -782,6 +782,272 @@ const routes: Array<RouteConfig> = [
 
 ---
 
+# 先ほどと同様にまずはviewを作成します
+
+`src/views/Counter.vue`
+
+```html
+<template>
+  <v-responsive class="overflow-y-auto">
+    <div class="pa-6 text-center">
+      This is a counter page
+    </div>
+  </v-responsive>
+</template>
+
+<script>
+
+export default {
+  name: 'counter',
+};
+</script>
+
+```
+
+---
+
+# 先ほどと同様に作ったviewをrouterに登録します
+
+`src/router/index.ts`
+
+```diff
+...
++ import Counter from '../views/Counter.vue';
+...
+const routes: Array<RouteConfig> = [
+  ...
++ {
++   path: '/counter',
++   name: 'Counter',
++   component: Counter,
++ },
+];
+...
+```
+
+---
+
+# /counter にアクセスする。
+
+この時点で作ったviewがrouterに登録され、 `/counter` のパスで `This is a counter page` が表示された事が確認できると思います。
+
+ヘッダメニューには登録されていないので `AppBar.vue` を修正してメニューに表示しましょう。
+
+---
+
+# AppBar.vue(ヘッダメニュー)に登録します
+
+`src/components/AppBar.vue`
+
+```diff
+<template>
+  <v-app-bar app color="primary" dark>
+    <router-link to="/">
+      <v-btn text>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+    </router-link>
+    ...
++   <router-link to="/counter">
++     <v-btn text>
++       <v-icon>mdi-counter</v-icon>
++     </v-btn>
++   </router-link>
+  </v-app-bar>
+</template>
+```
+
+---
+
+# 確認
+
+- ヘッダメニューにカウンターiconが表示されている
+- カウンターiconをクリックすると `/counter` に遷移し、 `This is a counter page` が表示されている
+
+---
+
+# UIパーツとしてコンポーネントを作ろう
+
+`src/components/HandCounter.vue`
+
+```html
+<template>
+  <v-card
+    class="mx-auto"
+    max-width="200"
+    outlined
+  >
+    <v-list-item three-line>
+      <v-list-item-content>
+        <div class="text-center text-h1">0</div>
+      </v-list-item-content>
+    </v-list-item>
+    <v-card-actions>
+      <v-btn icon>
+        <v-icon x-large>mdi-minus</v-icon>
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon x-large>mdi-plus</v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</template>
+
+<script>
+export default {
+  name: 'hand-counter',
+};
+</script>
+
+```
+
+---
+
+# コンポーネントをviewで利用しよう
+
+```diff
+<template>
+  <v-responsive class="overflow-y-auto">
+    <div class="pa-6 text-center">
+      This is a counter page
+    </div>
++   <hand-counter/>
+  </v-responsive>
+</template>
+
+<script>
++ import HandCounter from '@/components/HandCounter.vue';
++
+export default {
+  name: 'counter',
++ components: {
++   HandCounter,
++ },
+};
+</script>
+
+```
+
+---
+
+# 確認
+
+- `/counter` ページに `+ボタン` `-ボタン` `0` が表示されたカウンターが表示されている
+- ボタンを押しても動作はしない
+
+---
+
+# Storeを作ってカウンターの動作を実装しよう
+
+`src/store/HandCounterStore.ts`
+
+```ts
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+Vue.use(Vuex);
+
+export default new Vuex.Store({
+  state: {
+    count: 0,
+  },
+  mutations: {
+    increment: (state) => {
+      state.count += 1;
+    },
+    decrement: (state) => {
+      state.count -= 1;
+    },
+  },
+  actions: {
+    increment: (context) => {
+      context.commit('increment');
+    },
+    decrement: (context) => {
+      context.commit('decrement');
+    },
+  },
+});
+
+```
+
+---
+
+# Storeをコンポーネントに組み込もう
+
+`src/components/HandCounter.vue`
+
+```diff
+<template>
+  <v-card
+    class="mx-auto"
+    max-width="200"
+    outlined
+  >
+    <v-list-item three-line>
+      <v-list-item-content>
+-       <div class="text-center text-h1">0</div>
++       <div class="text-center text-h1">{{ count }}</div>
+      </v-list-item-content>
+    </v-list-item>
+    <v-card-actions>
+-     <v-btn icon>
++     <v-btn icon @click="decrement">
+        <v-icon x-large>mdi-minus</v-icon>
+      </v-btn>
+      <v-spacer></v-spacer>
+-     <v-btn icon>
++     <v-btn icon @click="increment">
+        <v-icon x-large>mdi-plus</v-icon>
+      </v-btn>
+    </v-card-actions>
+  </v-card>
+</template>
+
+<script>
++ import store from '@/store/HandCounterStore';
++
+export default {
+  name: 'hand-counter',
++ store,
+  components: {},
++ computed: {
++   count() {
++     return this.$store.state.count;
++   },
++ },
++ methods: {
++   increment() {
++     this.$store.dispatch('increment');
++   },
++   decrement() {
++     this.$store.dispatch('decrement');
++   },
++ },
+};
+</script>
+
+```
+
+---
+
+# 確認
+
+- `+ボタン` を押すとカウントが `+1` される
+- `-ボタン` を押すとカウントが `-1` される
+
+---
+
+# いろいろいじったり調べたりしよう
+
+- `{{ count }}` でcountの値を表示している
+- `@click="increment"` で何が呼び出されているか
+- +10ボタンつけてみよう
+- カウントがマイナスにならないようにしてみよう
+
+---
+
 # TODOリストアプリを作ってみよう
 
 ---
